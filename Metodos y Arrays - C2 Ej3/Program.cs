@@ -9,14 +9,14 @@ namespace Metodos_y_Arrays___C2_Ej3
             Boolean primo = true;
             int i = numeroprimo;
 
-            do
+            while ((i > 2) & (primo))
             {
-                i = i-1;
-                if(numeroprimo%i==0)
+                i = i - 1;
+                if (numeroprimo % i == 0)
                 {
                     primo = false;
                 }
-            } while ((i > 2) & (primo));
+            }
             return primo;
         }
         static void Main(string[] args)
